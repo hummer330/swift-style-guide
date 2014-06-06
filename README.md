@@ -24,10 +24,22 @@ Use `let` over `var` where possible to avoid mutable state where it isn't necess
 
 **For example:**
 ```
-func sayHello() {    println("Hello!")}
+func sayHello() {
+    println("Hello!")
+}
 ```
 
 * There should be exactly one blank line between methods to aid in visual clarity and organization.
 
+## Closures
 
+* Trailing closures should be written outside of the parenthesis of the function to which they are being passed
 
+**For example:**
+```
+sort(names) { $0 > $1 }
+```
+not
+```
+sort(names, { $0 > $1 })
+```
