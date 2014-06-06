@@ -22,7 +22,6 @@ Use `let` over `var` where possible to avoid mutable state where it isn't necess
 * Indent using 4 spaces. Never indent with tabs. Be sure to set this preference in Xcode.
 * Braces for `func`/`if`/`else`/`switch`/`while` etc. should always open on the same line as the statement but close on a new line.
 
-**For example:**
 ```
 func sayHello() {
     println("Hello!")
@@ -35,7 +34,6 @@ func sayHello() {
 
 * Trailing closures should be written outside of the parenthesis of the function to which they are being passed
 
-**For example:**
 ```
 sort(names) { $0 > $1 }
 ```
@@ -43,3 +41,9 @@ not
 ```
 sort(names, { $0 > $1 })
 ```
+
+* If a function takes only one argument, and it's a closure, omit the parens
+* 
+```names.map { $0.upperCaseString }```
+not
+```names.map() { $0.uppercaseString }```
