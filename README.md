@@ -44,6 +44,10 @@ sort(names, { $0 > $1 })
 
 * If a function takes only one argument, and it's a closure, omit the parens
 
-```names.map { $0.upperCaseString }```
+```
+names.map { $0.upperCaseString }
+```
 not
-```names.map() { $0.uppercaseString }```
+```
+names.map() { $0.uppercaseString }
+```
