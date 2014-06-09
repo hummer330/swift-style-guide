@@ -22,7 +22,9 @@ Use `let` over `var` where possible to avoid mutable state where it isn't necess
 
 ## Naming
 
-Use camelCased variable, method, and function names. Long, descriptive names are good.
+Use camelCased variable, method, and function names. Long, descriptive names are good. You can use emoji in names, but if you do, you are crazy. However, other unicode characters in variable names might be sensible. For example, using π to represent the constant pi.
+
+```let π = 3.14159```
 
 ## Type Inference
 
