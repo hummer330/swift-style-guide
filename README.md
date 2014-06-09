@@ -11,11 +11,22 @@ We also took inspiration from the [NY Times Objective-C Style Guide](https://git
 ## Table of Contents
 
 * [Constants and Variables](#constants-and-variables)
+* [Naming](#naming)
+* [Type Inference](#type-inference)
 * [Spacing](#spacing)
+* [Closures](#closures)
 
 ## Constants and Variables
 
 Use `let` over `var` where possible to avoid mutable state where it isn't necessary.
+
+## Naming
+
+Use camelCased variable, method, and function names. Long, descriptive names are good.
+
+## Type Inference
+
+Prefer type inference where possible over explicit type declarations. Type declarations should only be used when the compiler demands it, or in rare cases to make the code more readable.
 
 ## Spacing
 
