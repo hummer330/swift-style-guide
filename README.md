@@ -15,6 +15,7 @@ We also took inspiration from the [NY Times Objective-C Style Guide](https://git
 * [Type Inference](#type-inference)
 * [Spacing](#spacing)
 * [Closures](#closures)
+* [Booleans](#booleans)
 
 ## Constants and Variables
 
@@ -55,4 +56,15 @@ sort(names) { $0 > $1 }
 
 ```
 names.map { $0.upperCaseString }
+```
+
+## Booleans
+
+Parentheses in boolean expressions are optional in Swift. Omit them where possible.
+
+**For example**
+```
+if numberOfItems > 2 {
+    doSomething()
+}
 ```
