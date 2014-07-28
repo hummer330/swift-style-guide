@@ -16,6 +16,7 @@ We also took inspiration from the [NY Times Objective-C Style Guide](https://git
 * [Spacing](#spacing)
 * [Closures](#closures)
 * [Booleans](#booleans)
+* [Protocols and Extensions](#protocols-and-extensions)
 
 ## Constants and Variables
 
@@ -66,5 +67,22 @@ Parentheses in boolean expressions are optional in Swift. Omit them where possib
 ```
 if numberOfItems > 2 {
     doSomething()
+}
+```
+
+## Protocols and Extensions
+
+Protocols should follow the [Single Responsibility Principle](http://en.wikipedia.org/wiki/Single_responsibility_principle) and only define one small piece of functionality. Protocol implementations should be confined to a class extension.
+
+**For example**
+```
+protocol TextRepresentable {
+    func asText() -> String
+}
+
+extension Dice: TextRepresentable {
+    func asText() -> String {
+        return "A \(sides)-sided dice"
+    }
 }
 ```
