@@ -114,6 +114,8 @@ let foo:Bar
 ## Whitespace
 
 * Indent using 4 spaces. Never indent with tabs. Be sure to set this preference in Xcode.
+* End files with a newline.
+* No trailing whitespace.
 * Braces for `func`/`if`/`else`/`switch`/`while` etc. should always open on the same line as the statement but close on a new line.
 
 ```swift 
