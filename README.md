@@ -95,11 +95,23 @@ var address: String? {
 }
 ```
 
-## Type Inference
+### Prefer Type Inference
 
 Prefer type inference where possible over explicit type declarations. Type declarations should only be used when the compiler demands it, or in rare cases to make the code more readable.
 
-## Spacing
+### Add Space Before Type Declarations
+
+This:
+```swift
+let foo: Bar
+```
+
+Not this:
+```swift
+let foo:Bar
+```
+
+## Whitespace
 
 * Indent using 4 spaces. Never indent with tabs. Be sure to set this preference in Xcode.
 * Braces for `func`/`if`/`else`/`switch`/`while` etc. should always open on the same line as the statement but close on a new line.
