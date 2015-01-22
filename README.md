@@ -75,6 +75,24 @@ Use camelCased variable, method, and function names. Long, descriptive names are
 
 ```swift let π = 3.14159```
 
+### Use Implicit Getters on Computed Properties
+
+Prefer this:
+```swift
+var address: String? {
+	return residence?.address?
+}
+```
+
+Over this:
+```swift
+var address: String? {
+	get {
+		return residence?.address?
+	}
+}
+```
+
 ## Type Inference
 
 Prefer type inference where possible over explicit type declarations. Type declarations should only be used when the compiler demands it, or in rare cases to make the code more readable.
