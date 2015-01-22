@@ -126,6 +126,10 @@ func sayHello() {
 
 * There should be exactly one blank line between methods to aid in visual clarity and organization.
 
+## Self
+
+Only reference self when necessary (usually in the context of a block, or where there is a local variable with the same name as an instance variable).
+
 ## Closures
 
 * Trailing closures should be written outside of the parenthesis of the function to which they are being passed
