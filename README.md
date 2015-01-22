@@ -56,7 +56,7 @@ Swift allows you to chain optionals to avoid many nested levels of `if-let` clau
 println(“\(person.residence?.address?)”)
 ```
 
-However, doing so is a code smell and usually violates the [Law of Demeter](http://en.wikipedia.org/wiki/Law_of_Demeter). A better way to handle this is to create a computed property called `address()` on the `Person` class that returns the optional address:
+However, doing so is a code smell and usually violates the [Law of Demeter](http://en.wikipedia.org/wiki/Law_of_Demeter). A better way to handle this is to create a computed property called `address` on the `Person` class that returns the optional address:
 
 ```swift
 class Person {
@@ -76,6 +76,8 @@ Use camelCased variable, method, and function names. Long, descriptive names are
 ```swift 
 let π = 3.14159
 ```
+
+The jury is out on how the Swift community will choose to declare constants. Some prefer `UpperCasedConstants` and others prefer a `SCREAMING_SNAKE_CASE`. Use one or the other, but not both.
 
 ### Use Implicit Getters on Computed Properties
 
