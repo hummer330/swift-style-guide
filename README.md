@@ -43,14 +43,14 @@ foo?.doSomething()
 Implicitly-unwrapped optionals are also dangerous. An implicitly unwrapped optional is declared like
 
 ```swift
-var foo: String!
+let foo: String! = someFuncThatMayReturnNil()
 ```
 
 If `foo` is accessed when it is `nil`, the app will crash. It is better to declare `foo` as `String?`, and use one of the optional unwrapping methods above.
 
 ### Avoid Chaining Optionals More Than One Level Deep
 
-Swift allows you to chain optionals to avoid many nested levels of `if-let` clauses. For example, if you have a `Person` class, with an optional `Residence?`, which itself has an optional `var address: String?` field, you could print out a person’s address with the following code:
+Swift allows you to chain optionals to avoid many nested levels of `if-let` clauses. For example, if you have a `Person` class, with an optional `Residence?`, which itself has an optional `let address: String?` field, you could print out a person’s address with the following code:
 
 ```swift
 println(“\(person.residence?.address?)”)
