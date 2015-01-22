@@ -23,7 +23,7 @@ We also took inspiration from the [NY Times Objective-C Style Guide](https://git
 Use `let` over `var` where possible to avoid mutable state where it isn't necessary.
 
 ### Avoid Force-Unwrapping of Optionals
-Force-unwrapping of optionals, e.g., `myVariable!` is dangerous and can cause a runtime exception if the underlying object is `nil`. Instead, use the `if-let` syntax:
+Force-unwrapping of optionals, e.g., `foo!` is dangerous and can cause a runtime exception if the underlying object is `nil`. Instead, use the `if-let` syntax:
 
 ```swift
 if let foo = foo {
