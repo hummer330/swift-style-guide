@@ -73,7 +73,9 @@ println(“\(person.address?)”)
 
 Use camelCased variable, method, and function names. Long, descriptive names are good. You can use emoji in names, but if you do, you are crazy. However, other unicode characters in variable names might be sensible. For example, using π to represent the constant pi.
 
-```swift let π = 3.14159```
+```swift 
+let π = 3.14159
+```
 
 ### Use Implicit Getters on Computed Properties
 
