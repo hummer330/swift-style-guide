@@ -11,9 +11,8 @@ We also took inspiration from the [NY Times Objective-C Style Guide](https://git
 ## Table of Contents
 
 * [Constants and Variables](#constants-and-variables)
-* [Naming](#naming)
-* [Type Inference](#type-inference)
-* [Spacing](#spacing)
+* [Whitespace](#whitespace)
+* [Self](#self)
 * [Closures](#closures)
 * [Booleans](#booleans)
 * [Protocols and Extensions](#protocols-and-extensions)
@@ -173,3 +172,7 @@ extension Dice: TextRepresentable {
     }
 }
 ```
+
+## Access
+
+Access in Swift defaults to `internal`, which means that any class in the same module can access those entities by default. For better encapsulation, declare entities with explicit `private` access and loosen the restrictions to `internal` or `public` only where necessary.
