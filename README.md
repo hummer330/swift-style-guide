@@ -14,7 +14,7 @@ We also took inspiration from the [NY Times Objective-C Style Guide](https://git
 * [Whitespace](#whitespace)
 * [Self](#self)
 * [Closures](#closures)
-* [Booleans](#booleans)
+* [Boolean Expressions](#boolean-expressions)
 * [Protocols and Extensions](#protocols-and-extensions)
 
 ## Constants and Variables
@@ -145,7 +145,7 @@ sort(names) { $0 > $1 }
 names.map { $0.upperCaseString }
 ```
 
-## Booleans
+## Boolean Expressions
 
 Parentheses in boolean expressions are optional in Swift. Omit them where possible.
 
