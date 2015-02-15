@@ -11,6 +11,7 @@ We also took inspiration from the [NY Times Objective-C Style Guide](https://git
 ## Table of Contents
 
 * [Constants and Variables](#constants-and-variables)
+* [Types](#types)
 * [Whitespace](#whitespace)
 * [Self](#self)
 * [Closures](#closures)
@@ -111,6 +112,10 @@ Not this:
 ```swift
 let foo:Bar
 ```
+
+## Types
+### Prefer Int Over Other Integer Types
+The Swift compiler treats `Int` and the other integer types (e.g. `Uint` and `Int8`) as incompatible types, and it also infers integers as being of type `Int`. Therefore, `Int` should be used in most general cases, even when the use of only non-negative values would suggest using `Uint`. Use other integer types only when you specifically need to, such as for performance or because of data size constraints in an external system.
 
 ## Whitespace
 
