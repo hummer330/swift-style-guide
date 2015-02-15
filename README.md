@@ -40,13 +40,13 @@ foo?.doSomething()
 ```
 ### Avoid Implicitly Unwrapped Optionals
 
-Implicitly-unwrapped optionals are also dangerous. An implicitly unwrapped optional is declared like
+Implicitly-unwrapped optionals are also dangerous unless you are 100% sure the value is not `nil`. An implicitly unwrapped optional is declared like
 
 ```swift
-let foo: String! = someFuncThatMayReturnNil()
+let foo: String! = someFuncThatReturnsAnOptional()
 ```
 
-If `foo` is accessed when it is `nil`, the app will crash. It is better to declare `foo` as `String?`, and use one of the optional unwrapping methods above.
+`foo` can later be accessed without explicitly unwrapping it. However, accessing `foo` when it is `nil` will trigger a runtime exception. It is always safer, then, to declare `foo` as `String?`, and use one of the optional unwrapping methods above.
 
 ### Avoid Chaining Optionals More Than One Level Deep
 
