@@ -117,6 +117,31 @@ let foo:Bar
 ### Prefer Int Over Other Integer Types
 The Swift compiler treats `Int` and the other integer types (e.g. `Uint` and `Int8`) as incompatible types, and it also infers integers as being of type `Int`. Therefore, `Int` should be used in most general cases, even when the use of only non-negative values would suggest using `Uint`. Use other integer types only when you specifically need to, such as for performance or because of data size constraints in an external system.
 
+### Prefer Shortcut Type Declarations for Arrays and Dictionaries
+When declaring an array type, there are two ways of declaring the type: `Array<T>` and `[T]`. Apple’s Swift book prefers the  latter shortcut. Indeed, it is more concise while still being readable:
+
+```swift
+var stringArray: [String]
+```
+
+vs.
+
+```swift
+var stringArray: Array<String>
+```
+
+Likewise, dictionaries have a shortcut type declaration as well:
+
+```swift
+var stringDictionary: [String: String]
+```
+
+vs.
+
+```swift
+var stringDictionary: Dictionary<String, String>
+```
+
 ## Whitespace
 
 * Indent using 4 spaces. Never indent with tabs. Be sure to set this preference in Xcode.
